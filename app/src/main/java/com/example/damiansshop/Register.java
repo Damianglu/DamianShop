@@ -52,7 +52,7 @@ public class Register extends AppCompatActivity {
         mLoginTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setContentView(R.layout.activity_login);
+                setContentView(R.layout.activity_main);
             }
         });
 
