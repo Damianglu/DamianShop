@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Register extends AppCompatActivity {
 
     //Text Views
@@ -16,6 +18,8 @@ public class Register extends AppCompatActivity {
     EditText mRegisterName,mRegisterEmail, mRegisterAddress, mRegisterCard, mRegisterPassword;
     //Buttons
     Button mRegisterButton;
+    //Firebase Authentication
+    private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +37,8 @@ public class Register extends AppCompatActivity {
         mRegisterPassword = findViewById(R.id.RegisterPassword);
         //Initializing Buttons
         mRegisterButton = findViewById(R.id.RegisterButton);
+        //Initialize Firebase Authentication
+        firebaseAuth = FirebaseAuth.getInstance();
 
 
         mLoginTextView.setOnClickListener(new View.OnClickListener() {
