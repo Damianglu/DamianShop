@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/designlogin2"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/RegisterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/blue"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:background="@drawable/edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:padding="15dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegisterTextView"
+        app:layout_constraintWidth_percent=".8"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:id="@+id/RegisterName"/>
+
+    <EditText
+        android:background="@drawable/edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegisterName"
+        app:layout_constraintWidth_percent=".8"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:id="@+id/RegisterEmail"/>
+
+    <EditText
+        android:background="@drawable/edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegisterEmail"
+        app:layout_constraintWidth_percent=".8"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:id="@+id/RegisterAddress"/>
+
+    <EditText
+        android:background="@drawable/edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Card Number"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegisterAddress"
+        app:layout_constraintWidth_percent=".8"
+        android:drawableLeft="@drawable/ic_baseline_credit_card_24"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:id="@+id/RegisterCard"/>
+
+    <EditText
+        android:background="@drawable/edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RegisterCard"
+        app:layout_constraintWidth_percent=".8"
+        android:drawableLeft="@drawable/ic_baseline_enhanced_encryption_24"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:id="@+id/RegisterPassword"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:id="@+id/RegisterButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterPassword"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintWidth_percent=".4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In Here"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/RegisterPassword"
+        app:layout_constraintStart_toStartOf="@id/RegisterPassword"
+        app:flow_verticalBias=".2"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintTop_toBottomOf="@id/RegisterButton"
+        android:id="@+id/LoginTextView"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
